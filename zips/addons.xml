@@ -15,6 +15,16 @@
 
 		</dir>
 
+		<dir>
+		 <info compressed="false">http://github.com/cmik/cmik.xbmc/raw/master/addons.xml</info>
+		 <checksum>http://github.com/cmik/cmik.xbmc/raw/master/addons.xml.md5</checksum>
+        		<datadir zip="true">http://github.com/cmik/cmik.xbmc/raw/master/downloads</datadir>
+		</dir>
+		<dir>
+        		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
 		<info compressed="false">https://raw.githubusercontent.com/AkosiKepweng/Kepweng-Reborn/master/zips/addons.xml</info>
 
 		<checksum>https://raw.githubusercontent.com/AkosiKepweng/Kepweng-Reborn/master/zips/addons.xml.md5</checksum>
@@ -32,6 +42,29 @@
 		<genre></genre>
 
 	</extension>
+</addon>
+
+<addon 	id="plugin.video.Tele-Kepweng"
+		name="Tele-Kepweng"
+		version="0.0.1"
+		provider-name="Team Kepweng">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+<import addon="script.module.resolveurl" version="5.0.15"/>
+<import addon="script.module.urlresolver"  version="4.0.16"/>
+
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="Kepweng.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Sit back and Relax</summary>
+<description lang="en">Project ni Kepweng</description>
+<platform>all</platform>
+<language>en</language>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+</extension>
 </addon>
 
 <addon id="script.module.addon.common"
