@@ -45,7 +45,7 @@
 </addon>
 
 
-<addon id="plugin.video.pinoykabayantv" name="Kabayan TV" version="0.0.1" provider-name="Team Kepweng/RACC/BossF">
+<addon id="plugin.video.pinoykabayantv" name="Kabayan TV" version="0.0.2" provider-name="Team Kepweng/RACC/BossF">
 
 	<requires>
 
