@@ -44,6 +44,43 @@
 	</extension>
 </addon>
 
+
+<addon id="plugin.video.pinoykabayantv" name="Kabayan TV" version="0.0.1" provider-name="Team Kepweng/RACC/BossF">
+
+	<requires>
+
+    		<import addon="xbmc.python" version="2.1.0"/>
+
+       		<import addon="script.module.livestreamer" />
+
+        		<import addon="script.module.requests" />
+
+         		<import addon="script.module.routing" />
+
+           </requires>
+
+ <extension point="xbmc.python.pluginsource" library="addon.py">
+
+    <provides>video</provides>
+
+ </extension>
+
+ <extension point="xbmc.addon.metadata">
+
+    <summary lang="en_gb">LIVE TV from RACC</summary>
+
+   <description lang="en_gb">LIVE TV ,The author does not host any content, nor is he affiliated with any of the content providers</description>
+    <disclaimer lang="en_gb">The author does not host any content, nor is he affiliated with any of the content providers.</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
 <addon 	id="plugin.video.Tele-Kepweng"
 		name="Tele-Kepweng"
 		version="0.0.2"
@@ -87,6 +124,34 @@
     <website></website>
     <email></email>
     <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.livestreamer"
+       name="livestreamer"
+       version="1.12.0"
+       provider-name="Christopher Rosell">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"
+                      version="1.1.0"
+                     optional="false"/>
+    <import addon="script.module.singledispatch"
+                      version="3.4.0.3"
+                     optional="false"/>
+    <import addon="script.module.futures"
+                      version="2.2.0"
+                     optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Livestreamer extracts streams from various services</summary>
+    <description>Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC. The main purpose of Livestreamer is to allow the user to avoid buggy and CPU heavy flash plugins but still be able to enjoy various streamed content. There is also an API available for developers who want access to the video stream data.</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source>https://github.com/chrippa/livestreamer.git</source>
+    <website>http://livestreamer.io</website>
   </extension>
 </addon>
 
@@ -134,6 +199,22 @@
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
 	</extension>
+</addon>
+
+<addon id="script.module.routing" name="Plugin routing" version="0.2.1" provider-name="takoi">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Routing module for plugins</summary>
+        <description lang="en">Library for building and parsing plugin URLs.
+
+Documentation: https://github.com/tamland/kodi-plugin-routing</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <platform>all</platform>
+        <source>https://github.com/tamland/kodi-plugin-routing</source>
+    </extension>
 </addon>
 
 <addon id="script.module.urlresolver" name="URLResolver" version="4.0.16" provider-name="Eldorado, tknorris, tvaddons">
