@@ -83,7 +83,7 @@
 
 <addon 	id="plugin.video.Tele-Kepweng"
 		name="Tele-Kepweng"
-		version="0.0.2"
+		version="0.0.3"
 		provider-name="Team Kepweng">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
