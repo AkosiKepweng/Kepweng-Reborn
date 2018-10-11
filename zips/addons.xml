@@ -44,6 +44,30 @@
 	</extension>
 </addon>
 
+<addon 	id="plugin.video.Cine-Kepweng"
+		name="Cine-Kepweng"
+		version="0.0.1"
+		provider-name="Team Kepweng">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+<import addon="script.module.resolveurl" version="5.0.15"/>
+<import addon="script.module.urlresolver"  version="4.0.16"/>
+<import addon="script.module.addon.common" />
+
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="Kepweng.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Sit back and Relax</summary>
+<description lang="en">Project ni Kepweng</description>
+<platform>all</platform>
+<language>en</language>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+</extension>
+</addon>
+
 
 <addon id="plugin.video.pinoykabayantv" name="Kabayan TV" version="0.0.2" provider-name="Team Kepweng/RACC/BossF">
 
