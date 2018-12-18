@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+<addon id="Kepweng-Reborn" name="Kepweng-Reborn" version="0.0.1" provider-name="Mang Kepweng">
+
+	<extension point="xbmc.addon.repository" name="Kepweng-Reborn">
+
+		<dir>
+
+		<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+
+		<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+
+		<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+
+		</dir>
+
+		<dir>
+		 <info compressed="false">http://github.com/cmik/cmik.xbmc/raw/master/addons.xml</info>
+		 <checksum>http://github.com/cmik/cmik.xbmc/raw/master/addons.xml.md5</checksum>
+        		<datadir zip="true">http://github.com/cmik/cmik.xbmc/raw/master/downloads</datadir>
+		</dir>
+		<dir>
+        		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/AkosiKepweng/Kepweng-Reborn/master/zips/addons.xml</info>
+
+		<checksum>https://raw.githubusercontent.com/AkosiKepweng/Kepweng-Reborn/master/zips/addons.xml.md5</checksum>
+
+		<datadir zip="true">https://raw.githubusercontent.com/AkosiKepweng/Kepweng-Reborn/master/zips/</datadir>
+
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+
+		<summary lang="en">Tambayan ni Kepweng</summary>
+
+		<description lang="en">Tambayan ni Kepweng</description>
+
+		<genre></genre>
+
+	</extension>
+</addon>
+
+<addon id="plugin.video.bathala" version="0.0.2" name="Bathala" provider-name="Team Kepweng">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.bathala" />
+		<import addon="script.bathala.artwork" />
+		<import addon="script.bathala.metadata" />
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+        <import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="bathala.py">
+		<provides>video</provides>
+        <provides>audio</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Bathala</summary>
+		<description>Covenant Fork from Echo/Colossus/Placenta era with Team Afterbirth's updates and new code. </description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+</disclaimer>
+		<platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+		<license>Beerware rev. 42</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+    			<!--<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>-->
+			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon 	id="plugin.video.Cine-Kepweng"
+		name="Cine-Kepweng"
+		version="0.0.4"
+		provider-name="Team Kepweng">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+<import addon="script.module.resolveurl" version="5.0.18"/>
+<import addon="script.module.urlresolver"  version="4.0.16"/>
+<import addon="script.module.addon.common" />
+<import addon="script.module.requests" />
+
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="Kepweng.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Sit back and Relax</summary>
+<description lang="en">Project ni Kepweng</description>
+<platform>all</platform>
+<language>en</language>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+</extension>
+</addon>
+
+
+<addon id="plugin.video.pinoykabayantv" name="Kabayan TV" version="0.0.2" provider-name="Team Kepweng/RACC/BossF">
+
+	<requires>
+
+    		<import addon="xbmc.python" version="2.1.0"/>
+
+       		<import addon="script.module.livestreamer" />
+
+        		<import addon="script.module.requests" />
+
+         		<import addon="script.module.routing" />
+
+           </requires>
+
+ <extension point="xbmc.python.pluginsource" library="addon.py">
+
+    <provides>video</provides>
+
+ </extension>
+
+ <extension point="xbmc.addon.metadata">
+
+    <summary lang="en_gb">LIVE TV from RACC</summary>
+
+   <description lang="en_gb">LIVE TV ,The author does not host any content, nor is he affiliated with any of the content providers</description>
+    <disclaimer lang="en_gb">The author does not host any content, nor is he affiliated with any of the content providers.</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon 	id="plugin.video.Tele-Kepweng"
+		name="Tele-Kepweng"
+		version="0.0.6"
+		provider-name="Team Kepweng">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+<import addon="script.module.resolveurl" version="5.0.18"/>
+<import addon="script.module.urlresolver"  version="4.0.16"/>
+
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="Kepweng.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Sit back and Relax</summary>
+<description lang="en">Project ni Kepweng</description>
+<platform>all</platform>
+<language>en</language>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+</extension>
+</addon>
+
+
+<addon id="script.bathala.artwork" version="1.0.8" name="Bathala Artwork" provider-name="Team Kepweng">
+
+	<requires>
+
+	<import addon="xbmc.python" version="2.19.0"/>
+
+	</requires>
+
+	<extension point="xbmc.python.module" library="lib" />
+
+	<extension point="xbmc.addon.metadata">
+
+		<summary>Themes for the Bathala Addon</summary>
+
+		<description>Artwork Module for the Bathala Addon</description>
+
+        <disclaimer lang="en">The author is not responsible for the use of this addon.
+	The author is not responsible for the content found using this addon.
+	The author does not host or own any content found within this addon.
+
+The author is in no way affiliated with Kodi,
+	Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource,
+	organized solely for educational purposes which is protected under the Fair-Use doctrine of the
+	Copyright Act, Specifically section 107, which does promote freedom of expression,
+	by permitting the unlicensed use of copyright-protected works.</disclaimer>
+
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.bathala.metadata" version="1.0.1" name="Bathala Metadata" provider-name="Team Kepweng">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Bathala Addon</summary>
+		<description>Metadata for Bathala are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.addon.common"
+	     name="Common addon methods"
+	     version="2.0.1"
+	     provider-name="Eldorado (original: t0mm0)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of commonly used addon routines</summary>
+    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+
+<addon id="script.module.bathala" name="Bathala Module" version="0.0.2" provider-name="Team Kepweng">
+
+	<requires>
+
+	<import addon="xbmc.python" version="2.1.0" />
+
+		<import addon="script.module.beautifulsoup4"/>
+
+	</requires>
+
+	<extension point="xbmc.python.module" library="lib" />
+
+	<extension point="xbmc.addon.metadata">
+
+	<platform>all</platform>
+
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+
+	<summary lang="en">Bathala</summary>
+
+		<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Beerware rev. 42</license>
+	</extension>
+</addon>
+
+<addon id="script.module.livestreamer"
+       name="livestreamer"
+       version="1.12.0"
+       provider-name="Christopher Rosell">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"
+                      version="1.1.0"
+                     optional="false"/>
+    <import addon="script.module.singledispatch"
+                      version="3.4.0.3"
+                     optional="false"/>
+    <import addon="script.module.futures"
+                      version="2.2.0"
+                     optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Livestreamer extracts streams from various services</summary>
+    <description>Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC. The main purpose of Livestreamer is to allow the user to avoid buggy and CPU heavy flash plugins but still be able to enjoy various streamed content. There is also an API available for developers who want access to the video stream data.</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source>https://github.com/chrippa/livestreamer.git</source>
+    <website>http://livestreamer.io</website>
+  </extension>
+</addon>
+
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="3.0.3"
+     provider-name="Eldorado, jsergio">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.requests"
+       name="requests"
+       version="2.18.4.1"
+       provider-name="kennethreitz">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.urllib3" version="1.22"/>
+    <import addon="script.module.chardet" version="3.0.4"/>
+    <import addon="script.module.idna" version="2.6"/>
+    <import addon="script.module.certifi" version="2017.07.27.1"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python HTTP for Humans</summary>
+    <description lang="en_GB">Packed for KODI from https://github.com/requests/requests</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://python-requests.org</website>
+    <source>https://github.com/beenje/script.module.requests</source>
+    <email>beenje AT gmail.com</email>
+  </extension>
+</addon>
+
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.18" provider-name="jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+	</extension>
+</addon>
+
+<addon id="script.module.routing" name="Plugin routing" version="0.2.1" provider-name="takoi">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Routing module for plugins</summary>
+        <description lang="en">Library for building and parsing plugin URLs.
+
+Documentation: https://github.com/tamland/kodi-plugin-routing</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <platform>all</platform>
+        <source>https://github.com/tamland/kodi-plugin-routing</source>
+    </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="4.0.16" provider-name="Eldorado, tknorris, tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+</addons>
