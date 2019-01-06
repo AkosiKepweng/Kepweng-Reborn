@@ -128,7 +128,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 
 <addon 	id="plugin.video.KNT"
 		name="Kapihan ni Tarsilo"
-		version="0.15"
+		version="0.0.1"
 		provider-name="Team Kepweng">
 <requires>
 <import addon="xbmc.python" version="2.19.0" />
