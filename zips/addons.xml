@@ -89,7 +89,7 @@
 
 <addon 	id="plugin.video.Tele-Kepweng"
 		name="Kapihan ni Tarsilo"
-		version="0.0.7"
+		version="0.0.8"
 		provider-name="Team Kepweng">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
