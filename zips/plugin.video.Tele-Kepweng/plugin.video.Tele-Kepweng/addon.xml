@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon 	id="plugin.video.Tele-Kepweng"
+		name="Kapihan ni Tarsilo"
+		version="0.0.8"
+		provider-name="Team Kepweng">
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+<import addon="script.module.resolveurl" version="5.0.15"/>
+<import addon="script.module.urlresolver"  version="4.0.16"/>
+<import addon="script.module.python.koding.aio" version="1.0" />
+
+</requires>
+<extension point="xbmc.python.pluginsource"
+			library="Kepweng.py">
+		<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Personal ni Kepweng</summary>
+<description lang="en">Project ni Kepweng</description>
+<platform>all</platform>
+<language>en</language>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+</extension>
+</addon>
