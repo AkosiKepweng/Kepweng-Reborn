@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon 	id="plugin.video.PinoyReplay" name="Pinoy Replay" version="PinoyReplay20" provider-name="Kepweng">
+<addon 	id="plugin.video.PinoyReplay" name="Pinoy Replay" version="0.20" provider-name="Kepweng">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
 <import addon="script.module.resolveurl" version="5.0.15"/>
@@ -13,10 +13,10 @@
 		<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-<summary lang="en">Para sa mga OFW </summary>
-<description lang="en">Sit Back and Enjoy !!!</description>
+<summary lang="en"></summary>
+<description lang="en"></description>
 <platform>all</platform>
 <language>en</language>
-<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+<license></license>
 </extension>
 </addon>
